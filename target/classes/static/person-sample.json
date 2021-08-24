@@ -1,0 +1,11 @@
+{
+  "firstName":"Rodrigo",
+  "lastName":"Pelego",
+  "cpf":"345.343.343-43",
+  "phones":[
+    {
+      "type":"MOBILE",
+      "number":"(11)999999999"
+    }
+  ]
+}
