@@ -15,7 +15,7 @@ import java.util.List;
 @RequestMapping("/api/v1/people")
 public class PersonController {
 
-    private PersonService personService;
+    private final PersonService personService;
 
     @Autowired
     public PersonController(PersonService personService){
@@ -37,5 +37,11 @@ public class PersonController {
     @GetMapping("/{id}")
     public PersonDTO findById(@PathVariable Long id) throws PersonNotFoundException {
         return personService.findById(id);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void deleteById(@PathVariable Long id) throws PersonNotFoundException {
+        personService.delete(id);
     }
 }
