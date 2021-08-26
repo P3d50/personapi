@@ -5,11 +5,11 @@ import com.p3d50.personapi.entity.Person;
 import com.p3d50.personapi.entity.Phone;
 import java.util.ArrayList;
 import java.util.List;
-import javax.annotation.Generated;
+import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-08-25T22:08:48-0300",
+    date = "2021-08-25T23:15:59-0300",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 16.0.1 (Oracle Corporation)"
 )
 public class PersonMapperImpl implements PersonMapper {

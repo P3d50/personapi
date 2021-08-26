@@ -2,15 +2,11 @@ package com.p3d50.personapi.controller;
 
 import com.p3d50.personapi.dto.request.PersonDTO;
 import com.p3d50.personapi.dto.response.MessageResponseDTO;
+import com.p3d50.personapi.exception.PersonNotFoundException;
 import com.p3d50.personapi.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -36,5 +32,10 @@ public class PersonController {
     @ResponseStatus(HttpStatus.CREATED)
     public MessageResponseDTO postPersons(@RequestBody @Valid  PersonDTO person){
         return personService.createPerson(person);
+    }
+
+    @GetMapping("/{id}")
+    public PersonDTO findById(@PathVariable Long id) throws PersonNotFoundException {
+        return personService.findById(id);
     }
 }
