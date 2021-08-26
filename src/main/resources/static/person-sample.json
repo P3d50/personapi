@@ -1,12 +1,12 @@
 {
-  "firstName":"Rodrigo",
-  "lastName":"Pelego",
-  "cpf":"345.343.343-43",
-  "birthDate":"23-03-1988",
-  "phones":[
-    {
-      "type":"MOBILE",
-      "number":"(11)999999999"
-    }
-  ]
+  "id": 1,
+  "lastName": "Rodrigo",
+  "firstName": "Drigo",
+  "cpf": "325.343.333-43",
+  "birthDate": "23-03-1988",
+  "phone": [{
+    "id": 1,
+    "type": "MOBILE_PHONE",
+    "number": "(11)999999999"
+  }]
 }
