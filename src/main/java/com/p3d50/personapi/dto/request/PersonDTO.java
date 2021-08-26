@@ -35,7 +35,7 @@ public class PersonDTO extends Person {
     @CPF
     private String cpf;
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm")
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private String birthDate;
 
     @Valid
