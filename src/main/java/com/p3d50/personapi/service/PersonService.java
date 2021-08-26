@@ -1,26 +1,30 @@
 package com.p3d50.personapi.service;
 
-import com.p3d50.personapi.dto.MessageResponseDTO;
+import com.p3d50.personapi.dto.request.PersonDTO;
+import com.p3d50.personapi.dto.response.MessageResponseDTO;
 import com.p3d50.personapi.entity.Person;
+import com.p3d50.personapi.mapper.PersonMapper;
 import com.p3d50.personapi.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 
 @Service
 public class PersonService {
 
-    private PersonRepository personRepo;
+    private PersonRepository personRepository;
+
+    private final PersonMapper personMapper = PersonMapper.INSTANCE.INSTANCE;
 
     @Autowired
-    public PersonService(PersonRepository personRepo){
-        this.personRepo=personRepo;
+    public PersonService(PersonRepository personRepository){
+        this.personRepository=personRepository;
     }
 
 
-    public MessageResponseDTO createPerson(Person person) {
-        Person savedPerson = personRepo.save(person);
+    public MessageResponseDTO createPerson(PersonDTO personDTO) {
+        Person personToSave = personMapper.toModel(personDTO);
+
+        Person savedPerson = personRepository.save(personToSave);
         return MessageResponseDTO
                 .builder()
                 .message("Created person with id:" + savedPerson.getId())
@@ -30,7 +34,7 @@ public class PersonService {
     public MessageResponseDTO findAll(){
         return MessageResponseDTO
                 .builder()
-                .message("Getting all persons\n"+this.personRepo.findAll().toString())
+                .message("Getting all persons\n"+this.personRepository.findAll().toString())
                 .build();
     }
 }

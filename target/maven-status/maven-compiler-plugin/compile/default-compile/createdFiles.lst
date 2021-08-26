@@ -1,0 +1,5 @@
+com\p3d50\personapi\enums\PhoneType.class
+com\p3d50\personapi\service\PersonService.class
+com\p3d50\personapi\entity\Phone.class
+com\p3d50\personapi\controller\PersonController.class
+com\p3d50\personapi\entity\Phone$PhoneBuilder.class
