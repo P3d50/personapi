@@ -9,7 +9,7 @@ import javax.annotation.processing.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2021-08-26T06:56:09-0300",
+    date = "2021-08-26T22:29:46-0300",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 16.0.1 (Oracle Corporation)"
 )
 public class PersonMapperImpl implements PersonMapper {
@@ -27,9 +27,9 @@ public class PersonMapperImpl implements PersonMapper {
         person.setLastName( personDTO.getLastName() );
         person.setFirstName( personDTO.getFirstName() );
         person.setCpf( personDTO.getCpf() );
-        List<Phone> list = personDTO.getPhone();
+        List<Phone> list = personDTO.getPhones();
         if ( list != null ) {
-            person.setPhone( new ArrayList<Phone>( list ) );
+            person.setPhones( new ArrayList<Phone>( list ) );
         }
 
         return person;
@@ -43,14 +43,14 @@ public class PersonMapperImpl implements PersonMapper {
 
         PersonDTO personDTO = new PersonDTO();
 
-        personDTO.setBirthDate( person.getBirthDate() );
         personDTO.setId( person.getId() );
         personDTO.setLastName( person.getLastName() );
         personDTO.setFirstName( person.getFirstName() );
         personDTO.setCpf( person.getCpf() );
-        List<Phone> list = person.getPhone();
+        personDTO.setBirthDate( person.getBirthDate() );
+        List<Phone> list = person.getPhones();
         if ( list != null ) {
-            personDTO.setPhone( new ArrayList<Phone>( list ) );
+            personDTO.setPhones( new ArrayList<Phone>( list ) );
         }
 
         return personDTO;
