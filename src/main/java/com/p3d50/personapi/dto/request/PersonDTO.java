@@ -39,6 +39,6 @@ public class PersonDTO extends Person {
 
     @Valid
     @NotEmpty
-    private List<PhoneDTO> phone;
+    private List<PhoneDTO> phones;
 
 }
