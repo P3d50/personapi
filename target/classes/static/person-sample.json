@@ -4,7 +4,7 @@
   "firstName": "Drigo",
   "cpf": "325.343.333-43",
   "birthDate": "23-03-1988",
-  "phone": [{
+  "phones": [{
     "id": 1,
     "type": "MOBILE_PHONE",
     "number": "(11)999999999"
