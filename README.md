@@ -1,5 +1,5 @@
 # Bootcamp Everis Site Reliability Engineer Essentials  :man_technologist:
-<image src="https://github.com/P3d50/personapi/blob/main/assets/everisbootcamplogo.png" width="300" height="300" align="right">
+<image src="https://github.com/P3d50/personapi/blob/main/assets/everisbootcamplogo.png" width="350" height="350" align="right">
  
 ## Sobre o bootcamp:  :seedling:  
    - Nessa jornada, através do bootcamp everis Site Reliability Engineer Essentials, são abordadas as principais ferramentas e práticas do mercado por grandes experts da área.
@@ -12,8 +12,9 @@
        - Relação de cada uma das operações acima com o padrão arquitetural REST, e a explicação de cada um dos conceitos REST envolvidos durante o desenvolvimento do projeto.
        - Desenvolvimento de testes unitários para validação das funcionalidades
        - Implantação do sistema na <a href="https://everisdioapersonapi.herokuapp.com/api/v1/people">nuvem através do (Heroku) :cloud:</a>
+       - ### Para fixar o aprendizado implementei a funcionalidade de busca por cpf (ex:/api/v1/people/cpf?num=111.111.111-11) criei testes unitários para a busca de CPF nas camadas repository, service e testes integrados para a camada de controller, utilizei JUnit5, AssertJ, e Diffblue. Criei testes para cobrir as demais funcionalidades.
  
- # Bootcamp realizado em parceria com a <a href="https://digitalinnovation.one/">DIO</a> :handshake:
+ # Bootcamp viabilizado em parceria com a <a href="https://digitalinnovation.one/">DIO</a> :handshake:
  
  <hr/>
 
@@ -41,10 +42,9 @@ São necessários os seguintes pré-requisitos para a execução do projeto dese
 * Muita vontade de aprender e compartilhar conhecimento :)
 
 Abaixo, seguem links de conteúdos que me ajudaram no projeto:
-
-	* [Teste unitário de Respository](https://howtodoinjava.com/spring-boot2/testing/datajpatest-annotation/)
-	* [Software Testing Tutorial - Learn Unit Testing and Integration Testing](https://www.youtube.com/watch?v=Geq60OVyBPg&t=847s)
-	* [AssertJ - fluent assertions java library ](https://assertj.github.io/doc/#assertj-core/)
+* [Teste unitário de Respository](https://howtodoinjava.com/spring-boot2/testing/datajpatest-annotation/)
+* [Software Testing Tutorial - Learn Unit Testing and Integration Testing](https://www.youtube.com/watch?v=Geq60OVyBPg&t=847s)
+* [AssertJ - fluent assertions java library ](https://assertj.github.io/doc/#assertj-core/)
 	
 
 Abaixo, seguem links bem bacanas, sobre tópicos mencionados durante o bootcamp:
