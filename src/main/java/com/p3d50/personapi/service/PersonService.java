@@ -11,13 +11,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
-
+@AllArgsConstructor
 @Service
-@AllArgsConstructor(onConstructor = @__(@Autowired))
-
 public class PersonService {
 
+    @Autowired
     private PersonRepository personRepository;
 
     private final PersonMapper personMapper = PersonMapper.INSTANCE.INSTANCE;
@@ -26,7 +26,9 @@ public class PersonService {
         Person personToCreate = personMapper.toModel(personDTO);
 
         Person createdPerson = personRepository.save(personToCreate);
-        return createMessageResponse(createdPerson.getId(), "Created person with id:");
+        return MessageResponseDTO.builder()
+                .message((createdPerson!=null)?"Created person with id: "+createdPerson.getId():"Person null")
+                .build();
     }
 
     public List<PersonDTO> listAll() {
@@ -41,6 +43,15 @@ public class PersonService {
     public PersonDTO findById(Long id) throws PersonNotFoundException {
         verifyIfExists(id);
         return personMapper.toDTO(personRepository.findById(id).get());
+    }
+
+    public PersonDTO findByCPF(String cpf) throws PersonNotFoundException {
+        Person person = personRepository.findByCPF(cpf);
+        if((person!=null)&&person.getCPF().equals(cpf)) {
+            return personMapper.toDTO(person);
+        }else{
+            throw new PersonNotFoundException("CPF não encontrado: "+cpf);
+        }
     }
 
     public void delete(Long id) throws PersonNotFoundException {
@@ -67,4 +78,6 @@ public class PersonService {
                 .message(message + id)
                 .build();
     }
+
+
 }

@@ -37,11 +37,15 @@ public class PersonController {
     }
 
 
+    @GetMapping("/cpf")
+    public PersonDTO findByCPF(@RequestParam(required = true) String num) throws PersonNotFoundException {
+        return personService.findByCPF(num);
+    }
+
     @PutMapping("/{id}")
     public MessageResponseDTO updateById(@PathVariable Long id, @RequestBody @Valid PersonDTO personDTO) throws PersonNotFoundException {
         return personService.updateById(id,personDTO);
     }
-
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)

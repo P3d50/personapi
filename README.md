@@ -40,6 +40,13 @@ São necessários os seguintes pré-requisitos para a execução do projeto dese
 * Conta no Heroku para o deploy do projeto na nuvem
 * Muita vontade de aprender e compartilhar conhecimento :)
 
+Abaixo, seguem links de conteúdos que me ajudaram no projeto:
+
+	* [Teste unitário de Respository](https://howtodoinjava.com/spring-boot2/testing/datajpatest-annotation/)
+	* [Software Testing Tutorial - Learn Unit Testing and Integration Testing](https://www.youtube.com/watch?v=Geq60OVyBPg&t=847s)
+	* [AssertJ - fluent assertions java library ](https://assertj.github.io/doc/#assertj-core/)
+	
+
 Abaixo, seguem links bem bacanas, sobre tópicos mencionados durante o bootcamp:
 
 * [SDKMan! para gerenciamento e instalação do Java e Maven](https://sdkman.io/)

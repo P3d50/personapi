@@ -33,7 +33,7 @@ public class Person {
     private String firstName;
 
     @Column(nullable = false,unique = true)
-    private String cpf;
+    private String CPF;
 
     @Column(name = "birth_date")
     @JsonFormat(pattern = "dd-MM-yyyy")
