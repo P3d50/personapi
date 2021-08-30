@@ -52,7 +52,7 @@ public class PersonController {
     }
 
     @PutMapping("/{id}")
-    @ApiOperation(value="Update a persons by CPF")
+    @ApiOperation(value="Update a person by Id")
     public MessageResponseDTO updateById(@PathVariable Long id, @RequestBody @Valid PersonDTO personDTO) throws PersonNotFoundException {
         return personService.updateById(id,personDTO);
     }
