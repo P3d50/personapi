@@ -5,15 +5,18 @@
    - Nessa jornada, através do bootcamp everis Site Reliability Engineer Essentials, são abordadas as principais ferramentas e práticas do mercado por grandes experts da área.
  
 ## Projeto final:  :deciduous_tree:
-   - Construir do zero uma API REST com Spring Boot para cadastro e gerenciamento de pessoas de uma organização, até o <a href="http://everisdioapersonapi.herokuapp.com/swagger-ui/index.html"> Deploy na nuvem :cloud: (Heroku) </a>. Praticando os principais conceitos do estilo arquitetural REST envolvidos durante o desenvolvimento do projeto.
+   - Construir do zero uma API REST com Spring Boot para cadastro e gerenciamento de pessoas de uma organização, até o <a href="http://everisdioapersonapi.herokuapp.com/swagger-ui/index.html"> Deploy na nuvem :cloud: (Heroku) </a>  <a href="https://github.com/P3d50/personapi/blob/main/src/main/resources/static/person-sample.json">request body JSON</a>
+. Praticando os principais conceitos do estilo arquitetural REST envolvidos durante o desenvolvimento do projeto.
        - Setup inicial de projeto com o Spring Boot Initialzr 
        - Criação de modelo de dados para o mapeamento de entidades em bancos de dados
        - Desenvolvimento de operações de gerenciamento de usuários (Cadastro, leitura, atualização e remoção de pessoas de um sistema).
        - Relação de cada uma das operações acima com o padrão arquitetural REST, e a explicação de cada um dos conceitos REST envolvidos durante o desenvolvimento do projeto.
        - Desenvolvimento de testes unitários para validação das funcionalidades
        - Implantação do sistema na <a href="http://everisdioapersonapi.herokuapp.com/swagger-ui/index.html">nuvem através do (Heroku) :cloud:</a>
+       - <a href="https://github.com/P3d50/personapi/blob/main/src/main/resources/static/person-sample.json">Exemplo request body JSON</a>
+
        - ### Para fixar o aprendizado implementei a funcionalidade de busca por cpf (ex:/api/v1/people/cpf?num=111.111.111-11) criei testes unitários para a busca de CPF nas camadas repository, service e testes integrados para a camada de controller, utilizei JUnit5, AssertJ, e Diffblue. Criei testes para cobrir as demais funcionalidades. Configurei o Swagger para documentação da API.
-	- <a href="https://github.com/P3d50/personapi/blob/main/src/main/resources/static/person-sample.json">Exemplo request body JSON</a>
+	
  
  # Bootcamp viabilizado em parceria com a <a href="https://digitalinnovation.one/">DIO</a> :handshake:
  
