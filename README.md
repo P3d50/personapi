@@ -15,7 +15,7 @@
        - Implantação do sistema na <a href="http://everisdioapersonapi.herokuapp.com/swagger-ui/index.html">nuvem através do (Heroku) :cloud:</a>
        - <a href="https://github.com/P3d50/personapi/blob/main/src/main/resources/static/person-sample.json">Exemplo request body JSON</a>
 
-       - ### Para fixar o aprendizado implementei a funcionalidade de busca por cpf (ex:/api/v1/people/cpf?num=111.111.111-11) criei testes unitários para a busca de CPF nas camadas repository, service e testes integrados para a camada de controller, utilizei JUnit5, AssertJ, e Diffblue. Criei testes para cobrir as demais funcionalidades. Configurei o Swagger para documentação da API. Atualmente trabalhando com actuator, definindo e iplementando métricas para monitoramento do estado da aplicação.<a href="youtube.com/watch?v=LQlypTjmgZM">Spring Boot Tutorial - Spring Boot Actuator</a>
+       - ### Para fixar o aprendizado implementei a funcionalidade de busca por cpf (ex:/api/v1/people/cpf?num=111.111.111-11) criei testes unitários para a busca de CPF nas camadas repository, service e testes integrados para a camada de controller, utilizei JUnit5, AssertJ, e Diffblue. Criei testes para cobrir as demais funcionalidades. Configurei o Swagger para documentação da API. Atualmente trabalhando com actuator, definindo e iplementando métricas para monitoramento do estado da aplicação.<a href="youtube.com/watch?v=LQlypTjmgZM">Spring Boot Tutorial - Spring Boot Actuator</a> Avaliando como definir e implementar métricas com os recursos do heroku.
 	
  
  # Bootcamp viabilizado em parceria com a <a href="https://digitalinnovation.one/">DIO</a> :handshake:
