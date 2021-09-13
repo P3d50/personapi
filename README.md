@@ -17,7 +17,7 @@
 
        - ### Para fixar o aprendizado implementei a funcionalidade de busca por cpf (ex:/api/v1/people/cpf?num=111.111.111-11) criei testes unitários para a busca de CPF nas camadas repository, service e testes integrados para a camada de controller, utilizei JUnit5, AssertJ, e Diffblue. Criei testes para cobrir as demais funcionalidades. Configurei o Swagger para documentação da API.
 	
-![](https://github.com/P3d50/Santander-Bootcamp-Kotlin-Mobile-Developer-Digital-Innovation-One-2021/blob/main/TrabalhandoComAPIs/assets/api-screen-record.gif)
+![](https://github.com/P3d50/Santander-Bootcamp-Kotlin-Mobile-Developer-Digital-Innovation-One-2021/blob/main/TrabalhandoComAPIs/assets/api-screen-record1.gif)
 
  
  # Bootcamp viabilizado em parceria com a <a href="https://digitalinnovation.one/">DIO</a> :handshake:
