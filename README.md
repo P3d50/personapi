@@ -21,7 +21,10 @@
 
  
  # Bootcamp viabilizado em parceria com a <a href="https://digitalinnovation.one/">DIO</a> :handshake:
- 
+	
+	
+	
+ <image src="https://github.com/P3d50/personapi/blob/main/assets/3E634126.png" >
  <hr/>
 
 Para executar o projeto no terminal, digite o seguinte comando:
