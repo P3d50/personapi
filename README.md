@@ -5,7 +5,7 @@
    - Nessa jornada, através do bootcamp everis Site Reliability Engineer Essentials, são abordadas as principais ferramentas e práticas do mercado por grandes experts da área.
  
 ## Projeto final:  :deciduous_tree:
-   - Construir do zero uma API REST com Spring Boot para cadastro e gerenciamento de pessoas de uma organização, até o <a href="http://everisdioapersonapi.herokuapp.com/swagger-ui/index.html"> Deploy na nuvem :cloud: (Heroku) </a>  <a href="https://github.com/P3d50/personapi/blob/main/src/main/resources/static/person-sample.json">request body JSON</a>
+   - Construir do zero uma API REST com Spring Boot para cadastro e gerenciamento de pessoas de uma organização, até o <a href="http://everisdioapersonapi.herokuapp.com/swagger-ui/index.html"> Deploy na nuvem :cloud: (Heroku) </a>  <a href="https://github.com/P3d50/personapi/blob/main/src/main/resources/static/person-sample.json">request Payload JSON</a>
 . Praticando os principais conceitos do estilo arquitetural REST envolvidos durante o desenvolvimento do projeto.
        - Setup inicial de projeto com o Spring Boot Initialzr 
        - Criação de modelo de dados para o mapeamento de entidades em bancos de dados
